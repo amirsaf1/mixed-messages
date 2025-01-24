@@ -1,11 +1,11 @@
-const selectNumber = (randomNumber = (num) => {
-  Math.floor(Math.random * num);
-});
+const randomNumber = (num) => {
+  return Math.floor(Math.random * num);
+};
 
-if (selectNumber > 0 && selectNumber < 10) {
+if (randomNumber() > 0) {
   console.log("Your sign is a star");
 } else {
   console.log("Error");
 }
 
-selectNumber(1);
+console.log(randomNumber(5));
